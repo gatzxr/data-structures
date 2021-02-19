@@ -1,0 +1,17 @@
+{
+  "name": "doubly-linked-list",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "coverage": "nyc -r text -e .ts -x \"tests/*.test.ts\" npm run test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^3.6.3",
+    "jasmine": "^3.6.4",
+    "jasmine-spec-reporter": "^6.0.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
