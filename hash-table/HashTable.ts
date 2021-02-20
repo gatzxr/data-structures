@@ -1,4 +1,4 @@
-export default class HashMap {
+export default class HashTable {
     keyMap: any[];
     constructor(size=53) {
         this.keyMap = new Array(size)

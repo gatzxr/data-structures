@@ -31,6 +31,6 @@ export default class Stack {
         }
         this.first = this.first.next;
         this.size--;
-        return temp.value;
+        return temp;
     }
 }

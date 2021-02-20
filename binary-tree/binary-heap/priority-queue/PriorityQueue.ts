@@ -33,13 +33,12 @@ export default class PriorityQueue {
 
         if (leftChildPriority && leftChildPriority < this.values[idx].priority) swap = leftChildIdx;
         if (rightChildPriority
-            && ((!swap && rightChildPriority < this.values[idx].priority))
-            || (swap && rightChildPriority < leftChildPriority)
-        ) {
+            && ((!swap && rightChildPriority < this.values[idx].priority)
+            || (swap && rightChildPriority < leftChildPriority))) {
             swap = rightChildIdx;
         }
 
-        if (!swap) return;
+        if (!swap || !this.values[swap]) return;
         [this.values[idx], this.values[swap]] = [this.values[swap], this.values[idx]];
         this.sinkDown(swap);
     }
