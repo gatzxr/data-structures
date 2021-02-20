@@ -45,51 +45,52 @@ export default class BinarySearchTree {
         return this.recursiveFind(value, this.root);
     }
 
-    bfs(value: any): number {
+    breadthFirstTraversal(): any[] {
+        const results = []
         const queue = [];
         let node = this.root;
         queue.push(node);
         while(queue.length) {
-            if (node.value === value) return node.frequency;
             node = queue.shift();
+            results.push(node.value);
             node.left && queue.push(node.left);
             node.right && queue.push(node.right);
         }
-        return -1;
+        return results;
     }
 
-    dfsPreOrder(value: any): number {
-        let frequency = -1;
+    depthFirstTraversalPreOrder(): any[] {
+        const result = [];
         const traverse = (node) => {
-            if (node.value === value) return frequency = node.frequency;
+            result.push(node.value)
             node.left && traverse(node.left);
             node.right && traverse(node.right);
         }
         traverse(this.root);
-        return frequency;
+        return result;
     }
 
 
-    dfsPostOrder(value: any): number {
-        let frequency = -1;
+    depthFirstTraversalPostOrder(): any[] {
+        const result = [];
         const traverse = (node) => {
             node.left && traverse(node.left);
             node.right && traverse(node.right);
-            if (node.value === value) return frequency = node.frequency;
+            result.push(node.value);
         }
         traverse(this.root);
-        return frequency;
+        return result;
     }
 
-    dfsInOrder(value: any): number {
-        let frequency = -1;
+    depthFirstTraversalInOrder(): any[] {
+        const result = [];
         const traverse = (node) => {
             node.left && traverse(node.left);
-            if (node.value === value) return frequency = node.frequency;
+            result.push(node.value);
             node.right && traverse(node.right);
         }
         traverse(this.root);
-        return frequency;
+        return result;
     }
 }
 
