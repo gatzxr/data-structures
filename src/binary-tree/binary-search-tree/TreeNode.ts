@@ -1,5 +1,5 @@
 export default class TreeNode {
-    value: any;
+    value: number;
     left: TreeNode;
     right: TreeNode;
     frequency: number;
