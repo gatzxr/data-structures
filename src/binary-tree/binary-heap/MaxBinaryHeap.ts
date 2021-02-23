@@ -1,6 +1,6 @@
 
 export default class MaxBinaryHeap {
-    values: any[];
+    values: number[];
     constructor() {
         this.values = [];
     }
@@ -15,7 +15,7 @@ export default class MaxBinaryHeap {
         }
     };
 
-    insert(value: any): MaxBinaryHeap {
+    insert(value: number): MaxBinaryHeap {
         this.values.push(value);
         this.bubbleUp();
         return this;
@@ -43,7 +43,7 @@ export default class MaxBinaryHeap {
         this.sinkDown(swap);
     }
 
-    extractMax(): any {
+    extractMax(): number {
         if (!this.values.length) return undefined;
         const lastIdx = this.values.length - 1;
         [this.values[0], this.values[lastIdx]] = [this.values[lastIdx], this.values[0]]

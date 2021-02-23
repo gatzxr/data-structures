@@ -25,7 +25,7 @@ export default class BinarySearchTree {
         }
     }
 
-    insert(value: any): BinarySearchTree {
+    insert(value: number): BinarySearchTree {
         const newNode = new TreeNode(value);
         if (!this.root) {
             this.root = newNode;
@@ -34,18 +34,18 @@ export default class BinarySearchTree {
         return this.recursiveInsert(newNode, this.root);
     }
 
-    recursiveFind(value: any, node: TreeNode): number {
+    recursiveFind(value: number, node: TreeNode): number {
         if (value === node.value) return node.frequency;
         const searchDirection = value < node.value ? 'left' : 'right';
         return node[searchDirection] ? this.recursiveFind(value, node[searchDirection]) : -1;
     }
 
-    find(value: any): number {
+    find(value: number): number {
         if (!this.root) return -1;
         return this.recursiveFind(value, this.root);
     }
 
-    breadthFirstTraversal(): any[] {
+    breadthFirstTraversal(): number[] {
         const results = []
         const queue = [];
         let node = this.root;
@@ -59,7 +59,7 @@ export default class BinarySearchTree {
         return results;
     }
 
-    depthFirstTraversalPreOrder(): any[] {
+    depthFirstTraversalPreOrder(): number[] {
         const result = [];
         const traverse = (node) => {
             result.push(node.value)
@@ -71,7 +71,7 @@ export default class BinarySearchTree {
     }
 
 
-    depthFirstTraversalPostOrder(): any[] {
+    depthFirstTraversalPostOrder(): number[] {
         const result = [];
         const traverse = (node) => {
             node.left && traverse(node.left);
@@ -82,7 +82,7 @@ export default class BinarySearchTree {
         return result;
     }
 
-    depthFirstTraversalInOrder(): any[] {
+    depthFirstTraversalInOrder(): number[] {
         const result = [];
         const traverse = (node) => {
             node.left && traverse(node.left);
