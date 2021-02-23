@@ -1,3 +1,7 @@
+# @gatzxr/data-structures
+
+[![npm (scoped)](https://img.shields.io/npm/v/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@gatzxr/data-structures)
+
 
 
 This repository contains a set of the most popular data structures written in TypeScript
@@ -15,19 +19,9 @@ This repository contains a set of the most popular data structures written in Ty
 
 ### Installation
 
-[Node.js](https://nodejs.org/) is required in order to initialize the project.
 
-Download or clone the repository
 ```sh
-$ git clone https://github.com/gatzxr/data-structures.git
-```
-Download all modules by running
-```sh
-$ npm install
-```
-Usage examples can be found under /tests folder which can be executed by running
-```sh
-$ npm run test
+$ npm i @gatzxr/data-structures
 ```
 
 
