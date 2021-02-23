@@ -1,14 +1,3 @@
-// export { default as SinglyLinkedList } from './src/singly-linked-list/SinglyLinkedList';
-// export { default as DoublyLinkedList } from './src/doubly-linked-list/DoublyLinkedList';
-// export { default as Stack } from './src/stack/Stack';
-// export { default as Queue } from './src/queue/Queue';
-// export { default as BinarySearchTree } from './src/binary-tree/binary-search-tree/BinarySearchTree';
-// export { default as PriorityQueue } from './src/binary-tree/binary-heap/priority-queue/PriorityQueue';
-// export { default as MaxBinaryHeap } from './src/binary-tree/binary-heap/MaxBinaryHeap';
-// export { default as HashTable } from './src/hash-table/HashTable';
-// export { default as UnweightedGraph } from './src/graph/UnweightedGraph';
-// export { default as WeightedGraph } from './src/graph/WeightedGraph';
-
 import SinglyLinkedList from './src/singly-linked-list/SinglyLinkedList';
 import DoublyLinkedList from './src/doubly-linked-list/DoublyLinkedList';
 import Stack from './src/stack/Stack';
