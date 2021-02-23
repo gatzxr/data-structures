@@ -1,4 +1,4 @@
-import MaxBinaryHeap from '../binary-tree/binary-heap/MaxBinaryHeap';
+import { MaxBinaryHeap } from '../index';
 
 describe('Max Binary Heap', () => {
     let heap;

@@ -1,5 +1,4 @@
-import PriorityQueue from '../binary-tree/binary-heap/priority-queue/PriorityQueue';
-import Queue from '../queue/Queue';
+import { PriorityQueue } from '../index';
 
 describe('PriorityQueue', () => {
     let queue;

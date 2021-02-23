@@ -1,4 +1,4 @@
-import BinarySearchTree from '../binary-tree/binary-search-tree/BinarySearchTree';
+import { BinarySearchTree } from '../index';
 
 describe('Binary Search Tree', () => {
     let tree;

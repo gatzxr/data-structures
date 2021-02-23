@@ -1,4 +1,4 @@
-import Queue from '../queue/Queue';
+import { Queue } from '../index';
 
 describe('Queue', () => {
     let queue;

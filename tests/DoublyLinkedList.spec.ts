@@ -1,4 +1,4 @@
-import DoublyLinkedList from '../doubly-linked-list/DoublyLinkedList';
+import { DoublyLinkedList } from '../index';
 
 describe("Doubly linked list", () => {
     let list;

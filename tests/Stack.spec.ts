@@ -1,4 +1,4 @@
-import Stack from '../stack/Stack';
+import { Stack } from '../index';
 
 describe('Stack', () => {
     let stack;

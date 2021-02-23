@@ -1,11 +1,17 @@
 {
-  "name": "doubly-linked-list",
+  "name": "@gatzxr/data-structures",
   "version": "1.0.0",
+  "description": "A set of the most common data-structures",
+  "license": "MIT",
+  "repository": "gatzxr/data-structures",
+  "main": "index.ts",
   "scripts": {
     "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
     "coverage": "nyc -r text -e .ts -x \"tests/*.test.ts\" npm run test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mem": ">=4.0.0"
+  },
   "devDependencies": {
     "@types/jasmine": "^3.6.3",
     "jasmine": "^3.6.4",

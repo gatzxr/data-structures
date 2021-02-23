@@ -1,4 +1,4 @@
-import SinglyLinkedList from '../singly-linked-list/SinglyLinkedList';
+import { SinglyLinkedList } from '../index';
 
 describe("Singly linked list", () => {
     let list;
