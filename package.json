@@ -7,6 +7,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
+    "Data structures",
     "Singly linked list",
     "Doubly linked list",
     "Stack",
