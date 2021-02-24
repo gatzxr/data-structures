@@ -6,6 +6,19 @@
   "repository": "gatzxr/data-structures",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "Data structures",
+    "Singly linked list",
+    "Doubly linked list",
+    "Stack",
+    "Queue",
+    "heap",
+    "Priority queue",
+    "Max binary heap",
+    "Binary search tree",
+    "Weighted graph",
+    "Unweighted graph"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
